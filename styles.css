@@ -3,3 +3,143 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+}
+.supreme-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 5vh;
+}
+.main-container{
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 692px;
+}
+.big-image-container{
+    background-image: url("./images/hero-desktop.jpg");
+    background-size: contain;
+    margin-left: 1.8rem;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20%;
+}
+.logo{
+    width: 20%;
+    margin-top: 10%;
+}
+.text-container{
+    width: 65%;
+    height: 55%;
+    margin-top: 10%;
+}
+.big-header{
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    color: hsl(0, 6%, 24%);
+}
+.big-header-styled{
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+.description{
+    width: 85%;
+    min-width: 275px;
+    letter-spacing: 0.5px;
+    line-height: 1.8rem;
+    color: hsl(0, 36%, 70%);
+}
+.form-container{
+    margin-bottom: 20%;
+}
+form{
+    display: flex;
+}
+.input-wrapper{
+    width: 50%;
+    min-width: 330px;
+    position: relative;
+}
+.input-wrapper.error::after{
+    content: url("./images/icon-error.svg");
+    position: absolute;
+    top: 25%;
+    right: 16%;
+}
+.email-input.error{
+    border: 2px solid hsl(0, 93%, 68%);
+}
+.email-input{
+    text-align: left;
+    width: 100%;
+    min-width: 330px;
+    padding: 1.1rem 0 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    color: hsl(0, 6%, 24%);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    vertical-align: -8px;
+}
+.email-input:focus{
+    border: 1px solid hsl(0, 16%, 34%);
+}
+.email-input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+.button-wrapper{
+    width: 13%;
+    position: relative;
+}
+.submit-button{
+    width: 100%;
+    min-width: 86px;
+    padding: 1.1rem 0;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    position: relative;
+    right: 3rem;
+    bottom: 1px;
+    transition: background 0.3s ease-in;
+}
+.submit-button:hover{
+    background: linear-gradient(to right,hsl(0, 80%, 96%), hsl(0, 74%, 84%));
+    cursor: pointer;
+}
+.error-msg{
+    font-size: 14px;
+    color: hsl(0, 36%, 70%);
+    margin-top: 7px;
+    margin-left: 1.5rem;
+    visibility: hidden;
+}
+.error-msg.error{
+    visibility: visible;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.attribution > a{
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+.attribution > a:hover{
+    color: white;
+    cursor: pointer;
+}
+/*@media(max-width: 1300px){
+
+}*/

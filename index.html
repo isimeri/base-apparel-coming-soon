@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-
+  <script src="./script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,19 +17,37 @@
   </style>
 </head>
 <body>
+  <div class="supreme-container">
+    <div class="main-container">
 
-  We're coming soon
+      <div class="details-container">
+        <img src="./images/logo.svg" alt="base apparel logo" class="logo">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+        <div class="text-container">
+          <h1 class="big-header"><span class="big-header-styled">WE'RE</span> COMING SOON</h1>
+          <p class="description">Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.</p> 
+        </div>
 
-  Email Address
+        <div class="form-container">
+          <form action="#" novalidate class="mr-form">
+            <div class="input-wrapper"><input type="email" name="email" title="A valid email" class="email-input" placeholder="Email Address"></div>
+            <div class="button-wrapper"><button type="submit" name="submitButton" class="submit-button"><img src="./images/icon-arrow.svg"></button></div>
+          </form>
+          <p class="error-msg">Please provide a valid email</p>
+        </div>
+
+      </div>
+      
+      <div class="big-image-container"></div>
+
+    </div>
   
-  <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/isimeri">Isimeri Tori</a>.
     </p>
-  </footer>
+  </div>
+  
 </body>
 </html>
